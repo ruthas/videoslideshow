@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Video Slideshow</title>
-</head>
-<body>
-    <div class="container">
-        <video src="" class="slider" autoplay loop muted controls></video>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Video Slideshow</title>
+	</head>
+	<body>
+		<div class="container">
+			<video src="" class="slider" autoplay loop muted controls></video>
 
-        <ul>
-            <li onclick="videoslider('')"><video src="">vid1</video></li>
-            <li onclick="videoslider('')"><video src="">vid2</video></li>
-            <li onclick="videoslider('')"><video src="">vid3</video></li>
-        </ul>
-    </div>
-    
-    <script>
-        function videoslider(links) {
-            document.querySelector(".slider").src = links;
-        }
-    </script>
-    <script src="script.js"></script>
-</body>
+			<ul>
+				<li onclick="videoslider('./videos/portfolio-final.mp4')">
+					<video src="./videos/portfolio-final.mp4"></video>
+				</li>
+				<li onclick="videoslider('./videos/rhs-final.mp4')">
+					<video src="./videos/rhs-final.mp4"></video>
+				</li>
+				<li onclick="videoslider('./videos/lux-final.mp4')">
+					<video src="./videos/lux-final.mp4"></video>
+				</li>
+				<li onclick="videoslider('./videos/careerspages-indie-final.mp4')">
+					<video src="./videos/careerspages-indie-final.mp4"></video>
+				</li>
+				<li onclick="videoslider('./videos/fb-final.mp4')">
+					<video src="./videos/fb-final.mp4"></video>
+				</li>
+				<li onclick="videoslider('./videos/setana-final.mp4')">
+					<video src="./videos/setana-final.mp4"></video>
+				</li>
+			</ul>
+		</div>
+
+		<script>
+			function videoslider(links) {
+				document.querySelector('.slider').src = links
+			}
+		</script>
+		<script src="script.js"></script>
+	</body>
 </html>
